@@ -1,7 +1,6 @@
 <!doctype html>
 <html>
 <head>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta charset="utf-8">
 <title>Untitled Page</title>
 <meta name="generator" content="WYSIWYG Web Builder 16 - https://www.wysiwygwebbuilder.com">
@@ -10,6 +9,8 @@
 <link href="css/Raga.css" rel="stylesheet">
 <link href="css/index.css" rel="stylesheet">
 <script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/util.min.js"></script>
+<script src="js/scrollspy.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
 <script src="js/wb.slideshow.min.js"></script>
 <script>   
@@ -33,47 +34,48 @@
    });
 </script>
 </head>
-<body>
+<body data-spy="scroll">
    <header id="PageHeader1">
       <div id="PageHeader1_Container">
          <div id="wb_ResponsiveMenu1">
             <label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title"><span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
             <input type="checkbox" id="ResponsiveMenu1-submenu">
-            <ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
-               <li><a role="menuitem" href=""><i class="fa fa-home fa-2x">&nbsp;</i><br>Home</a></li>
-               <li><a role="menuitem" href=""><i class="fa fa-female fa-2x">&nbsp;</i><br>Quem&nbsp;Somos</a></li>
-               <li>
+            <ul class="nav ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
+               <li class="nav"><a role="menuitem" href="./index.html" class="active"><i class="fa fa-home fa-2x">&nbsp;</i><br>Home</a></li>
+               <li class="nav"><a role="menuitem" href="./quem-somos.html" class="nav-link"><i class="fa fa-female fa-2x">&nbsp;</i><br>Quem&nbsp;Somos</a></li>
+               <li class="nav">
                   <label for="ResponsiveMenu1-submenu-0" class="toggle"><i class="fa fa-university fa-2x">&nbsp;</i>Ambientes<b class="arrow-down"></b></label>
-                  <a role="menuitem" href="javascript:void(0)"><i class="fa fa-university fa-2x">&nbsp;</i><br>Ambientes<b class="arrow-down"></b></a>
+                  <a role="menuitem" href="javascript:void(0)" class="nav-link"><i class="fa fa-university fa-2x">&nbsp;</i><br>Ambientes<b class="arrow-down"></b></a>
                   <input type="checkbox" id="ResponsiveMenu1-submenu-0">
                   <ul role="menu">
-                     <li><a role="menuitem" href="">&#193;rea&nbsp;Servi&#231;os</a></li>
-                     <li><a role="menuitem" href="">Banheiros</a></li>
-                     <li><a role="menuitem" href="">Cozinhas</a></li>
-                     <li><a role="menuitem" href="">Dormit&#243;rios</a></li>
-                     <li><a role="menuitem" href="">Escrit&#243;rios</a></li>
-                     <li><a role="menuitem" href="">Home&nbsp;Theaters</a></li>
+                     <li class="nav"><a role="menuitem" href="" class="nav-link">&#193;rea&nbsp;Servi&#231;os</a></li>
+                     <li class="nav"><a role="menuitem" href="" class="nav-link">Banheiros</a></li>
+                     <li class="nav"><a role="menuitem" href="" class="nav-link">Cozinhas</a></li>
+                     <li class="nav"><a role="menuitem" href="" class="nav-link">Dormit&#243;rios</a></li>
+                     <li class="nav"><a role="menuitem" href="" class="nav-link">Escrit&#243;rios</a></li>
+                     <li class="nav"><a role="menuitem" href="" class="nav-link">Home&nbsp;Theaters</a></li>
                   </ul>
                </li>
-               <li><a role="menuitem" href=""><i class="fa fa-wechat fa-2x">&nbsp;</i><br>Fale&nbsp;Conosco</a></li>
+               <li class="nav"><a role="menuitem" href="./fale-conosco.html" class="nav-link"><i class="fa fa-wechat fa-2x">&nbsp;</i><br>Fale&nbsp;Conosco</a></li>
             </ul>
          </div>
          <div id="wb_Image1">
             <img src="images/logo.png" id="Image1" alt=""></div>
       </div>
    </header>
-   <div id="SlideShow1">
-      <img class="image" src="images/big-46.jpg" alt="Sua Cozinha Planejada" title="Sua Cozinha Planejada">
-      <img class="image" src="images/03_dormitorio04.jpg" style="display:none;" alt="Seu Quarto dos Sonhos" title="Seu Quarto dos Sonhos">
-      <img class="image" src="images/Home_Theater-4.jpg" style="display:none;" alt="Sua Sala Sob Medida" title="Sua Sala Sob Medida">
-      <img class="image" src="images/escritorio.jpg" style="display:none;" alt="Lar, Doce Escrit&#243;rio" title="Lar, Doce Escrit&#243;rio">
-      <div class="caption"><div class="caption_background"><div class="caption_text">Sua Cozinha Planejada</div></div></div>
-   </div>
    <div id="container">
+
 
    </div>
    <div id="Layer2">
       <div id="Layer2_Container">
+         <div id="SlideShow1">
+            <img class="image" src="images/big-46.jpg" alt="Sua Cozinha Planejada" title="Sua Cozinha Planejada">
+            <img class="image" src="images/03_dormitorio04.jpg" style="display:none;" alt="Seu Quarto dos Sonhos" title="Seu Quarto dos Sonhos">
+            <img class="image" src="images/Home_Theater-4.jpg" style="display:none;" alt="Sua Sala Sob Medida" title="Sua Sala Sob Medida">
+            <img class="image" src="images/escritorio.jpg" style="display:none;" alt="Lar, Doce Escrit&#243;rio" title="Lar, Doce Escrit&#243;rio">
+            <div class="caption"><div class="caption_background"><div class="caption_text">Sua Cozinha Planejada</div></div></div>
+         </div>
       </div>
    </div>
    <div id="PageFooter1_sensitive"></div>
