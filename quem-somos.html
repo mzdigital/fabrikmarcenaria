@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 16 - https://www.wysiwygwebbuilder.com">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/Raga.css" rel="stylesheet">
+<link href="css/quem-somos.css" rel="stylesheet">
+<script src="js/jquery-1.12.4.min.js"></script>
+<script>   
+   $(document).ready(function()
+   {
+      $("#wb_ResponsiveMenu1 ul li a").click(function(event)
+      {
+         $("#wb_ResponsiveMenu1 input").prop("checked", false);
+      });
+   var timerPageFooter1 = null;
+   function PageFooter1Hide()
+   {
+      var isTouch = (('ontouchstart' in window) || (navigator.msMaxTouchPoints > 0));
+      if (isTouch)
+         return;
+      timerPageFooter1 = setTimeout(function()
+      {
+         $('#PageFooter1').hide();
+         $('#PageFooter1_sensitive').show();
+      }, 2000);
+   }
+   PageFooter1Hide();
+   $('#PageFooter1_sensitive').on("mouseenter", function()
+   {
+      clearTimeout(timerPageFooter1);
+      if ($('#PageFooter1_sensitive').is(":visible"))
+      {
+         $('#PageFooter1_sensitive').hide();
+         $('#PageFooter1').show();
+      }
+   });
+   $('#PageFooter1').on("mouseleave",function()
+   {
+      PageFooter1Hide();
+   });
+   });
+</script>
+</head>
+<body>
+   <header id="PageHeader1" style="display:block;position:relative;text-align:center;width:100%;height:84px;z-index:7;">
+      <div id="PageHeader1_Container" style="width:970px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+         <div id="wb_ResponsiveMenu1" style="position:absolute;left:636px;top:8px;width:520px;height:69px;z-index:0;">
+            <label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title"><span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
+            <input type="checkbox" id="ResponsiveMenu1-submenu">
+            <ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
+               <li><a role="menuitem" href=""><i class="fa fa-home fa-2x">&nbsp;</i><br>Home</a></li>
+               <li><a role="menuitem" href=""><i class="fa fa-female fa-2x">&nbsp;</i><br>Quem&nbsp;Somos</a></li>
+               <li>
+                  <label for="ResponsiveMenu1-submenu-0" class="toggle"><i class="fa fa-university fa-2x">&nbsp;</i>Ambientes<b class="arrow-down"></b></label>
+                  <a role="menuitem" href="javascript:void(0)"><i class="fa fa-university fa-2x">&nbsp;</i><br>Ambientes<b class="arrow-down"></b></a>
+                  <input type="checkbox" id="ResponsiveMenu1-submenu-0">
+                  <ul role="menu">
+                     <li><a role="menuitem" href="">&#193;rea&nbsp;Servi&#231;os</a></li>
+                     <li><a role="menuitem" href="">Banheiros</a></li>
+                     <li><a role="menuitem" href="">Cozinhas</a></li>
+                     <li><a role="menuitem" href="">Dormit&#243;rios</a></li>
+                     <li><a role="menuitem" href="">Escrit&#243;rios</a></li>
+                     <li><a role="menuitem" href="">Home&nbsp;Theaters</a></li>
+                  </ul>
+               </li>
+               <li><a role="menuitem" href=""><i class="fa fa-wechat fa-2x">&nbsp;</i><br>Fale&nbsp;Conosco</a></li>
+            </ul>
+         </div>
+         <div id="wb_Image1" style="position:absolute;left:79px;top:9px;width:125px;height:66px;z-index:1;">
+            <img src="images/logo.png" id="Image1" alt=""></div>
+      </div>
+   </header>
+   <div id="PageFooter1_sensitive" style="position:fixed;display:none;left:0;right:0;bottom:0;height:92px;z-index:9999"></div>
+   <footer id="PageFooter1" style="position:fixed;overflow:hidden;text-align:center;left:0;right:0;bottom:0;height:92px;z-index:6;">
+      <div id="PageFooter1_Container" style="width:970px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+         <div id="wb_Text1" style="position:absolute;left:414px;top:34px;width:196px;height:24px;text-align:center;z-index:2;">
+            <span style="color:#FFFFFF;">Desenvolvido por</span></div>
+         <div id="wb_Image2" style="position:absolute;left:636px;top:21px;width:122px;height:79px;z-index:3;">
+            <img src="images/MZ_Logo.png" id="Image2" alt=""></div>
+      </div>
+   </footer>
+</body>
+</html>
